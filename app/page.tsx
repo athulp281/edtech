@@ -59,7 +59,7 @@ export default function HomePage() {
                 <span>Transform Your Career Today</span>
               </motion.div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 leading-tight">
                 Transform Your Future with{" "}
                 <TypedEffect
                   texts={["Quality Education", "Expert Mentorship", "Practical Skills", "Career Growth"]}
