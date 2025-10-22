@@ -5,22 +5,29 @@ import { Monitor, DollarSign, Target } from "lucide-react"
 
 const features = [
   {
-    icon: Monitor,
-    title: "Personalized Plans",
+    icon: Target,
+    title: "Faster Learning with Quick Market Apply",
     description:
-      "We design personalized learning plans that focus on your child's specific needs and goals. Our experts carefully shape each learning experience to be engaging, effective, and enjoyable, ensuring your child gets the best educational support for their journey.",
-  },
-  {
-    icon: DollarSign,
-    title: "Customizable pricing",
-    description:
-      "You'll only be charged for the services your child needs, with no hidden fees. Our flexible pricing ensures that education stays affordable, offering a plan that fits your budget while delivering the right support for your child's learning journey.",
+      "Learn only what matters — apply your skills to real projects right away."
+,
   },
   {
     icon: Target,
-    title: "Weak area focus",
+    title: "Mentored by Experts",
     description:
-      "From the first session, we focus on your child's weak areas, offering dedicated support to ensure steady progress. Our goal is to help them overcome challenges and gain confidence, providing consistent attention to the subjects they find most difficult.",
+      "Learn directly from professionals who’ve built real careers and startups.",
+  },
+  {
+    icon: Target,
+    title: "Portfolio & Personal Brand Building",
+    description:
+      "Showcase your work and grow your online identity with guided support.",
+  },
+   {
+    icon: Target,
+    title: "Job-Oriented Skills",
+    description:
+      "Every course is designed to help you earn, create, or get hired faster.",
   },
 ]
 
@@ -70,9 +77,9 @@ export function PersonalizedEducationSection() {
             <motion.div variants={itemVariants}>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  Personalized education
+                  Why Choose Mentrloop
                 </span>{" "}
-                that fits every child's educational needs
+                {/* that fits every child's educational needs */}
               </h2>
 
               {/* Purple underline decoration */}
@@ -86,14 +93,14 @@ export function PersonalizedEducationSection() {
             </motion.div>
 
             {/* Right Side - Description */}
-            <motion.div variants={itemVariants} className="lg:pt-8">
+            {/* <motion.div variants={itemVariants} className="lg:pt-8">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                 Personalized online education goes beyond a series of virtual classes and uninspiring instructions that
                 often miss the mark. At Interval, we believe in bridging the gap between knowledge and accessibility.
                 Our approach is centered on providing education that's customized to meet the unique needs of every
                 child.
               </p>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           {/* Features Cards */}

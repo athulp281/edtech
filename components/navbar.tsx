@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { ChevronDown, Menu, X, BookOpen, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 
 const courses = [
   "Web Development",
@@ -63,10 +64,11 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <BookOpen className="h-8 w-8 text-blue-600" />
+              {/* <BookOpen className="h-8 w-8 text-blue-600" />
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 EduTech
-              </span>
+              </span> */}
+              <Image alt="logo"  height={100} width={200} src={"https://mentrtest.vercel.app/assets/img/logo/logo-blue.png"} />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <div className="w-9 h-9"></div> {/* Placeholder for theme toggle */}
@@ -89,10 +91,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <button onClick={() => handleNavigation("/")} className="flex items-center space-x-2">
-            <BookOpen className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+            {/* <BookOpen className="h-8 w-8 text-blue-600 dark:text-blue-400" />
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               EduTech
-            </span>
+            </span> */}
+            <Image alt="logo"  height={100} width={200} src={"https://mentrtest.vercel.app/assets/img/logo/logo-blue.png"} />
           </button>
 
           {/* Desktop Navigation */}
@@ -137,25 +140,27 @@ export function Navbar() {
               )}
             </div>
 
-            <button
+            {/* <button
               onClick={() => handleNavigation("/blogs")}
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               Blogs
-            </button>
-            <button
+            </button> */}
+            {/* <button
               onClick={() => handleNavigation("/news")}
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               News
-            </button>
+            </button> */}
             <button
+            disabled
               onClick={() => handleNavigation("/about")}
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               About Us
             </button>
             <button
+            disabled
               onClick={() => handleNavigation("/contact")}
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >

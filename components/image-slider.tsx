@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
 const images = [
-  "/placeholder.svg?height=400&width=600",
-  "/placeholder.svg?height=400&width=600",
-  "/placeholder.svg?height=400&width=600",
-  "/placeholder.svg?height=400&width=600",
+  "/slide1.jpg?height=400&width=600",
+  "/slide2.png?height=400&width=600",
+  "/slide3.jpg?height=400&width=600",
+  "/slide4.webp?height=400&width=600",
 ]
 
 export function ImageSlider() {

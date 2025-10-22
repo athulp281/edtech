@@ -18,8 +18,8 @@ const courses = [
     color: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Data Science & Analytics",
-    description: "Learn Python, machine learning, and data visualization to become a professional data scientist.",
+    title: "Graphic Design",
+    description: "Turn creativity into visuals that connect and convert.",
     image: "/placeholder.svg?height=300&width=400",
     rating: 4.9,
     duration: "16 weeks",
@@ -29,8 +29,8 @@ const courses = [
     color: "from-purple-500 to-pink-500",
   },
   {
-    title: "UI/UX Design Masterclass",
-    description: "Create stunning user interfaces and experiences with Figma, Adobe XD, and modern design principles.",
+    title: "Video Editing & FX",
+    description: "– Create cinematic stories that stand out on any platform.",
     image: "/placeholder.svg?height=300&width=400",
     rating: 4.7,
     duration: "10 weeks",
@@ -40,7 +40,18 @@ const courses = [
     color: "from-green-500 to-teal-500",
   },
   {
-    title: "Digital Marketing Pro",
+    title: "Content Creation & Marketing",
+    description: "– Learn to craft and promote engaging content.",
+    image: "/placeholder.svg?height=300&width=400",
+    rating: 4.7,
+    duration: "10 weeks",
+    students: 3200,
+    price: "$249",
+    badge: "Creative",
+    color: "from-green-500 to-teal-500",
+  },
+  {
+    title: "Digital Marketing",
     description: "Master SEO, social media marketing, Google Ads, and comprehensive content marketing strategies.",
     image: "/placeholder.svg?height=300&width=400",
     rating: 4.6,
@@ -49,6 +60,17 @@ const courses = [
     price: "$199",
     badge: "Best Value",
     color: "from-orange-500 to-red-500",
+  },
+   {
+    title: "Human Resource Management",
+    description: "Build strong teams with leadership and compliance skills.",
+    image: "/placeholder.svg?height=300&width=400",
+    rating: 4.9,
+    duration: "16 weeks",
+    students: 1800,
+    price: "$399",
+    badge: "Highest Rated",
+    color: "from-purple-500 to-pink-500",
   },
 ]
 
@@ -105,10 +127,10 @@ export function FeaturedCourses() {
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Transform Your{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            Courses We Offer{" "}
+            {/* <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Career Today
-            </span>
+            </span> */}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Discover our most popular courses designed by industry experts to help you achieve your career goals and
@@ -122,10 +144,10 @@ export function FeaturedCourses() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex items-center justify-center space-x-6 mt-8"
           >
-            <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
+            {/* <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
               <TrendingUp className="h-5 w-5 text-green-500" />
               <span className="text-sm font-medium">50,000+ Students Enrolled</span>
-            </div>
+            </div> */}
             <div className="w-2 h-2 bg-gray-300 dark:bg-gray-600 rounded-full" />
             <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
               <Sparkles className="h-5 w-5 text-yellow-500" />
@@ -215,7 +237,7 @@ function EnhancedCourseCard({
         </div>
 
         <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full px-3 py-1">
-          <span className="text-sm font-bold text-gray-900 dark:text-white">{price}</span>
+          {/* <span className="text-sm font-bold text-gray-900 dark:text-white">{price}</span> */}
         </div>
 
         <motion.div

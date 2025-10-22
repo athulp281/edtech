@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { BookOpen, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -11,9 +12,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="flex items-center space-x-2 mb-4">
-              <BookOpen className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">EduTech</span>
+            <div className="flex items-center space-x-2 mb-4 bg-white" >
+              {/* <BookOpen className="h-8 w-8 text-blue-400" />
+              <span className="text-2xl font-bold">EduTech</span> */}
+               <Image alt="logo"  height={100} width={200} src={"https://mentrtest.vercel.app/assets/img/logo/logo-blue.png"} />
             </div>
             <p className="text-gray-400 mb-4">
               Empowering learners worldwide with cutting-edge education and technology skills.
@@ -72,22 +74,22 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/courses/web-development" className="text-gray-400 hover:text-white transition-colors">
-                  Web Development
+                  Digital Marketing
                 </Link>
               </li>
               <li>
                 <Link href="/courses/data-science" className="text-gray-400 hover:text-white transition-colors">
-                  Data Science
+                  Graphic Design
                 </Link>
               </li>
               <li>
                 <Link href="/courses/ui-ux-design" className="text-gray-400 hover:text-white transition-colors">
-                  UI/UX Design
+                  Video Editing & FX
                 </Link>
               </li>
               <li>
                 <Link href="/courses/digital-marketing" className="text-gray-400 hover:text-white transition-colors">
-                  Digital Marketing
+                  Content Creation & Marketing
                 </Link>
               </li>
               <li>
@@ -95,7 +97,15 @@ export function Footer() {
                   href="/courses/artificial-intelligence"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  AI & Machine Learning
+                  Human Resource Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/courses/artificial-intelligence"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  MERN Stack Development
                 </Link>
               </li>
             </ul>
@@ -111,15 +121,15 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-400">info@edutech.com</span>
+                <span className="text-gray-400">Info@mentrloop.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+91 7306426656</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-400">123 Education St, Learning City</span>
+                <span className="text-gray-400">A1 residency hi homes kuravankonam kowadir, Trivandrum pin:695003</span>
               </div>
             </div>
           </motion.div>
@@ -131,7 +141,7 @@ export function Footer() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
         >
-          <p>&copy; {new Date().getFullYear()} EduTech. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()}  Mentrloop. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

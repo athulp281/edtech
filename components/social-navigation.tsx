@@ -1,27 +1,27 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Instagram, MessageCircle, Linkedin } from "lucide-react"
+import { Instagram, MessageCircle, Linkedin, FacebookIcon } from "lucide-react"
 
 const socialLinks = [
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com/edutech",
+    href: "https://www.instagram.com/mentrloop/",
     color: "from-pink-500 to-purple-600",
     hoverColor: "hover:from-pink-600 hover:to-purple-700",
   },
   {
-    name: "WhatsApp",
-    icon: MessageCircle,
-    href: "https://wa.me/1234567890",
-    color: "from-green-500 to-green-600",
+    name: "Facebook",
+    icon: FacebookIcon,
+    href: "https://www.facebook.com/people/MentrLoop/61576718240212/",
+    color: "from-blue-500 to-blue-600",
     hoverColor: "hover:from-green-600 hover:to-green-700",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/company/edutech",
+    href: "https://www.linkedin.com/company/mentrloop/",
     color: "from-blue-500 to-blue-600",
     hoverColor: "hover:from-blue-600 hover:to-blue-700",
   },

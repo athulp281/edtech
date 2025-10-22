@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button"
 
 const features = [
   {
-    left: ["Personalized Attention", "Continuous Progress Tracking", "Real-time Doubt Clearance"],
-    right: ["Customized Learning", "Hybrid Learning Model", "Regular Evaluations"],
+    left: ["Learn from industry mentors who guide you even after course completion", "Apply your skills directly to live or simulated startup projects.", ],
+    right: ["Build a strong portfolio that stands out to clients and companies.", "Grow your personal brand and learn how to earn from your abilities.", ],
   },
 ]
 
@@ -61,7 +61,7 @@ export function BestPlatformSection() {
                 <div className="bg-pink-100 dark:bg-pink-900/30 rounded-3xl p-8 shadow-2xl">
                   <div className="relative h-80 rounded-2xl overflow-hidden">
                     <Image
-                      src="/images/student-classroom.png"
+                      src={"https://www.usnews.com/object/image/00000191-80a0-d21f-a595-f3ed9f4d0000/gettyimages-2105091005.jpg?update-time=1724440047982&size=responsive640"}
                       alt="Student in classroom"
                       fill
                       className="object-cover"
@@ -81,10 +81,10 @@ export function BestPlatformSection() {
                     <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center">
                       <Users className="h-6 w-6 text-white" />
                     </div>
-                    <div>
+                    {/* <div>
                       <div className="text-2xl font-bold text-pink-600 dark:text-pink-400">50K+</div>
                       <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Enrolled Learners</div>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               </div>
@@ -95,12 +95,12 @@ export function BestPlatformSection() {
           <motion.div variants={itemVariants} className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                The Best{" "}
+               Why  {" "}
                 <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-blue-500 bg-clip-text text-transparent">
-                  Online Learning Platform
+                  Mentrloop is the
                 </span>
                 <br />
-                That Is Ready To Assist Your Kid In All Ways
+                Best Option
               </h2>
 
               {/* Purple underline decoration */}
@@ -162,8 +162,10 @@ export function BestPlatformSection() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
             >
-              Together, these elements create a supportive environment for students to succeed academically and grow
-              personally.
+              At Mentrloop, learning isn’t limited to watching lessons — it’s about transforming knowledge
+into action.
+We’ve built a system that bridges education and entrepreneurship, helping students from
+every background step confidently into the real world.
             </motion.p>
 
             {/* CTA Button */}
@@ -177,7 +179,7 @@ export function BestPlatformSection() {
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                Book a demo class today
+              🚀 Join the Loop Today
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </motion.div>

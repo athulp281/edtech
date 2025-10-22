@@ -6,41 +6,36 @@ import { ChevronDown, HelpCircle, BookOpen, Users, Award, Clock } from "lucide-r
 
 const faqs = [
   {
-    question: "How do I get started with EduTech courses?",
+    question: "Are the certificates free after course completion?",
     answer:
-      "Getting started is easy! Simply browse our course catalog, select the course that interests you, and click 'Enroll Now'. You'll have immediate access to all course materials, including videos, assignments, and community forums. Our onboarding process will guide you through setting up your learning environment.",
+      "Yes, you’ll receive free verified certificates for every completed course.",
     icon: BookOpen,
   },
   {
-    question: "What kind of support do you provide to students?",
+    question: "Do I get mentorship after finishing the course?",
     answer:
-      "We provide comprehensive support including 24/7 technical assistance, dedicated mentors for each course, peer-to-peer learning communities, office hours with instructors, and career guidance. Our support team is always ready to help you succeed in your learning journey.",
+      "Absolutely. Mentrloop offers ongoing mentorship to help you apply what you’ve learnedin real projects.",
     icon: Users,
   },
   {
-    question: "Do you offer certificates upon course completion?",
+    question: "Are the courses online or offline?",
     answer:
-      "Yes! Upon successful completion of any course, you'll receive a verified certificate that you can add to your LinkedIn profile, resume, or portfolio. Our certificates are recognized by industry leaders and can help boost your career prospects.",
+      "All courses are available online with flexible learning options and mentor access.",
     icon: Award,
   },
   {
-    question: "How long do I have access to course materials?",
+    question: "Can beginners join the programs?",
     answer:
-      "Once you enroll in a course, you have lifetime access to all course materials. This means you can learn at your own pace, revisit content whenever needed, and access any future updates to the course content at no additional cost.",
+      "100%! Our modules are beginner-friendly and designed to take you from zero to job-ready skills.",
     icon: Clock,
   },
   {
-    question: "Can I get a refund if I'm not satisfied with a course?",
+    question: "How long will it take to complete a course?",
     answer:
-      "We offer a 30-day money-back guarantee for all our courses. If you're not completely satisfied with your learning experience within the first 30 days, we'll provide a full refund, no questions asked.",
+      "Most courses can be completed in 4 weeks, depending on your schedule and learning pace.",
     icon: HelpCircle,
   },
-  {
-    question: "Are there any prerequisites for the courses?",
-    answer:
-      "Prerequisites vary by course. Most beginner courses require no prior experience, while advanced courses may require foundational knowledge. Each course page clearly lists any prerequisites, and we offer preparatory materials to help you get ready if needed.",
-    icon: BookOpen,
-  },
+ 
 ]
 
 export function FAQSection() {

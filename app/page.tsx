@@ -60,7 +60,7 @@ export default function HomePage() {
               </motion.div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 leading-tight">
-                Transform Your Future with{" "}
+               Discover the Loop With Us : {}
                 <TypedEffect
                   texts={["Quality Education", "Expert Mentorship", "Practical Skills", "Career Growth"]}
                   className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block sm:inline"
@@ -68,8 +68,8 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-10 leading-relaxed">
-                Join thousands of learners who have advanced their careers with our industry-leading courses and expert
-                instructors.
+                Empowering you to learn fast, get mentored by real experts, and turn your skills into income
+opportunities. Join the community where learning leads directly to doing.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-8 sm:mb-12">
@@ -93,7 +93,7 @@ export default function HomePage() {
               </div>
 
               {/* Trust indicators */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -116,7 +116,7 @@ export default function HomePage() {
                   <span className="text-yellow-400 text-base sm:text-lg">★★★★★</span>
                   <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">4.8/5 Rating</span>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
             {/* Image Slider - Second on mobile, Second on desktop */}
@@ -163,7 +163,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section id="stats" className="py-16 bg-white dark:bg-gray-900">
+      {/* <section id="stats" className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -184,22 +184,26 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Best Platform Section */}
-      <section id="best-platform">
+      {/* <section id="best-platform">
         <BestPlatformSection />
-      </section>
+      </section> */}
 
       {/* Personalized Education Section */}
       <section id="personalized-education">
         <PersonalizedEducationSection />
       </section>
 
-      {/* Learning Categories Section */}
-      <section id="learning-categories">
-        <LearningCategoriesSection />
+       <section id="best-platform">
+        <BestPlatformSection />
       </section>
+
+      {/* Learning Categories Section */}
+      {/* <section id="learning-categories">
+        <LearningCategoriesSection />
+      </section> */}
 
       {/* Featured Courses */}
       <section id="courses" className="py-20 bg-white dark:bg-gray-900">
@@ -207,9 +211,9 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-20 bg-gray-50 dark:bg-gray-800">
+      {/* <section id="testimonials" className="py-20 bg-gray-50 dark:bg-gray-800">
         <TestimonialsSection />
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section id="faq" className="py-20">
@@ -217,9 +221,9 @@ export default function HomePage() {
       </section>
 
       {/* Latest News Section */}
-      <section id="news" className="py-20">
+      {/* <section id="news" className="py-20">
         <LatestNewsSection />
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section id="cta" className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
