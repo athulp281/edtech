@@ -81,7 +81,7 @@ opportunities. Join the community where learning leads directly to doing.
                   Start Learning Today
                   <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
                 </Button>
-                <Button
+                {/* <Button
                   size="lg"
                   variant="outline"
                   className="border-2 bg-transparent dark:border-gray-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 h-auto hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 w-full sm:w-auto"
@@ -89,7 +89,7 @@ opportunities. Join the community where learning leads directly to doing.
                 >
                   <Play className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
                   Watch Demo
-                </Button>
+                </Button> */}
               </div>
 
               {/* Trust indicators */}

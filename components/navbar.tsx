@@ -113,6 +113,7 @@ export function Navbar() {
               onMouseLeave={() => setIsCoursesOpen(false)}
             >
               <button
+              disabled
                 onClick={() => handleNavigation("/courses")}
                 className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >

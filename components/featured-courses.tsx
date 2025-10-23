@@ -170,6 +170,62 @@ export function FeaturedCourses() {
           ))}
         </motion.div>
 
+        
+ <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16 mt-10"
+        > <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+           Combination Courses{" "}
+            {/* <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Career Today
+            </span> */}
+          </h2></motion.div>
+
+           <p style={{display:"flex",justifyContent:"center"}} className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+           The Best Skill Combination You Can Try
+          </p>
+
+           <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10"
+        >
+          { [
+  {
+    title: "Digital Brand Builder",
+    description:
+      "A power-packed combo of Digital Marketing + Content Marketing + Graphic Design — perfect for freelancers, entrepreneurs, and creators.",
+    image: "/placeholder.svg?height=300&width=400",
+    rating: 4.8,
+    duration: "12 weeks",
+    students: 2500,
+    price: "$299",
+    badge: "Most Popular",
+    color: "from-blue-500 to-cyan-500",
+  },
+  {
+    title: "Creative Growth Mastery",
+    description: "Blend creativity and storytelling with Video Editing, Design, and Marketing — ideal for content creators and startup storytellers.",
+    image: "/placeholder.svg?height=300&width=400",
+    rating: 4.9,
+    duration: "16 weeks",
+    students: 1800,
+    price: "$399",
+    badge: "Highest Rated",
+    color: "from-purple-500 to-pink-500",
+  }].map((course, index) => (
+            <motion.div key={index} variants={itemVariants} whileHover={{ y: -10, scale: 1.02 }}>
+              <EnhancedCourseCard {...course} index={index} />
+            </motion.div>
+          ))}
+        </motion.div>
+        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

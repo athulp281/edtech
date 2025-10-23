@@ -12,8 +12,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "EduTech - Transform Your Future with Quality Education",
-    template: "%s | EduTech",
+    default: "Mentrloop - Discover the Loop With Us",
+    template: "%s | Mentrloop",
   },
   description:
     "Leading online education platform offering courses in technology, business, and personal development. Join 50,000+ students learning web development, data science, UI/UX design, and more.",
